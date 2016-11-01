@@ -35,6 +35,7 @@ namespace LommeRegner
 
             Console.WriteLine("Welcome to superAwesomeCalculator4000\n");
             Console.WriteLine("Commands that are always available: Exit (Closes the program) | Reset (Resets the program)");
+            Console.WriteLine("Math commands available: + | - | * | / | sqrt");
             Console.WriteLine("Made by Michael and Filip\n");
         }
 
