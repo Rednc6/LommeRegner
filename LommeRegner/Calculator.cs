@@ -80,6 +80,13 @@ namespace LommeRegner
                         _userOperator = input2;
                         isNumber2 = true;
                     }
+                    if (input2.Equals("sqrt"))
+                    {
+                        _userOperator = input2;
+                        isNumber2 = true;
+                        isNumber3 = true;
+
+                    }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
@@ -144,6 +151,10 @@ namespace LommeRegner
                     break;
                 case "/":
                     Console.WriteLine($"\n Result: {_a / _b}\n");
+                    resetProgram();
+                    break;
+                case "sqrt":
+                    Console.WriteLine($"\n Result: {Math.Sqrt(_a)}");
                     resetProgram();
                     break;
             }
