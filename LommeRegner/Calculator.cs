@@ -25,6 +25,14 @@ namespace LommeRegner
 
         public void introduction()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("    ********************************* ");
+            Console.WriteLine("    *                               * ");
+            Console.WriteLine("    *  SuperAwesomeCalculator4000   * ");
+            Console.WriteLine("    *                               * ");
+            Console.WriteLine("    ********************************* \n ");
+            Console.ResetColor();
+
             Console.WriteLine("Welcome to superAwesomeCalculator4000\n");
             Console.WriteLine("Commands that are always available: Exit (Closes the program) | Reset (Resets the program)");
             Console.WriteLine("Made by Michael and Filip\n");
@@ -74,7 +82,9 @@ namespace LommeRegner
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write("\n Enter one of the following operators: + | - | * | /");
+                        Console.ResetColor();
                         
                     }
                 }
